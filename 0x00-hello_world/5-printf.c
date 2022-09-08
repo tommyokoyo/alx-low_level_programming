@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - entry point 
- *
- * return 0
- **/
+ * main - This is the entry point
+ * the string: with proper grammar, but the outcome is a piece of art,
+ * followed by a newline, using printf and not puts.
+ * return: Always 0 (Success)
+ */
 
 int main(void)
 {
