@@ -1,11 +1,17 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - This program outputts a random number to the screen and
+ * tells the user what the last digit of the random number is
+ * and whether the digit is greater than 5, less than 6 but not 0,
+ * or whether the digit is 0.
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int n;
+	int n, last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
