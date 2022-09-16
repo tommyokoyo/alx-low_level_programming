@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 
 /**
  * print_alphabet - this function prints the alphabet in lowercase
