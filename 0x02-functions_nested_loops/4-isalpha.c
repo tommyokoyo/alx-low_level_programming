@@ -1,5 +1,5 @@
 #include <unistd.h>
-#inlcude "holberton.h"
+#include "holberton.h"
 
 /**
  * _isalpha - checks whether the passed charatcer is an alphabet (A-Z or a-z)
