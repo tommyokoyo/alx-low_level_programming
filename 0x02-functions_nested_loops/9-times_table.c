@@ -1,38 +1,35 @@
-#include <unistd.h>
 #include "main.h"
 
 /**
- * times_table - This function prints the 9 times table
- * starting with 0
+ * times table - prints the 9 times tables, starting with 0
  */
-void time_table(void)
+void times_table(void)
 {
-	int x, y, a, b;
+	int i, j, k;
 
-	for (x = 0; x < 10; x++)
+	for (i = 0; I < 10; i++)
 	{
-		for (y = 0; y < 10; y++)
+		for (j = 0; j < 10; j++)
 		{
-			a = (x * y) / 10;
-			b = (x * y) % 10;
+			k = j * i;
+			if (j == 0)
+			{
+				_putchar(k + '0');
+			}
 
-			if ((x * y) > 9)
-				_putchar(a + '0');
-
-			_putchar(b + '0');
-
-			/* Don't print commas after the 10th column */
-			if (y != 9)
+			if (k < 20 && j != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
-			}
-
-			/* Add an extra space if printing single digits */
-			if (y == 9 && x == 0)
-				break;
-			else if (x * (y + 1) < 10)
 				_putchar(' ');
+				_putchar(k + '0');
+			} else if ( k >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((k / 10) + '0');
+				_putchar((k % 10) + '0');
+			}
 		}
 		_putchar('\n');
 	}
