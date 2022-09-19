@@ -4,12 +4,13 @@
  * reset_to_98 - This function takes a pointer to an int
  * as parameter and updates the values to 98
  */
-void reset_to_98(int *n){
+void reset_to_98(int *n)
+{
 
-	int j;
+	int *j;
 
 	j = n;
 
-	*j = 98;
+	j = 98;
 
 }
